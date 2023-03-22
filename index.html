@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--NAV-->
+    <div class="nav">
+        <div class="navLogo text1">
+            DojoWeather
+        </div>
+        <div class="navLink text2">
+            <p class="city" onclick="alert('Loading weather report...')">Burbank</p>
+            <p class="city" onclick="alert('Loading weather report...')">Chicago</p>
+            <p class="city" onclick="alert('Loading weather report...')">Dallas</p>
+        </div>
+    </div>
+    <!--MAIN-->
+    <div class="main">
+        <!--TOPBANNER-->
+        <div class="top">
+            <div class="topLogo text3">
+            San Jose
+            </div>
+            <div class="temptConvert">
+                <label for="temptSelect" class="text4">show temperature in </label>
+                <select name="temptSelector" id="temptSelect" onchange="degreeswitch(this)">
+                    <option value="C" class="tempStyle">°C</option>
+                    <option value="F" class="tempStyle">°F</option>
+                </select>
+            </div>
+        </div>
+        <!--WEATHERDISPLAY-->
+        <div class="weathDisplay">
+            <div class="day">
+                <p class="dayLogo">Today</p>
+                <img src="Picture/assets/assets/some_rain.png" alt="rain" class="weathImg">
+                <p class="weatherText">some rain</p>
+                <div class="tempts">
+                    <p class="high-text"> <span class="high">24</span>°</p>
+                    <p class="low-text"> <span class="low">18</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <p class="dayLogo">Tomorrow</p>
+                <img src="Picture/assets/assets/some_sun.png" alt="sun" class="weathImg">
+                <p class="weatherText"> some rain</p>
+                <div class="tempts">
+                    <p class="high-text"> <span class="high">27</span>°</p>
+                    <p class="low-text"> <span class="low">19</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <p class="dayLogo">Friday</p>
+                <img src="Picture/assets/assets/some_clouds.png" alt="cloud" class="weathImg">
+                <p class="weatherText">some clouds</p>
+                <div class="tempts">
+                    <p class="high-text"> <span class="high">21</span>°</p>
+                    <p class="low-text"> <span class="low">16</span>°</p>
+                </div>
+            </div>
+            <div class="day">
+                <p class="dayLogo">Saturday</p>
+                <img src="Picture/assets/assets/some_sun.png" alt="sun" class="weathImg">
+                <p class="weatherText">some sun</p>
+                <div class="tempts ">
+                    <p class="high-text"> <span class="high">26</span>°</p>
+                    <p class="low-text"> <span class="low">21</span>°</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--POPUP-->
+    <div class="popCookie">
+        <img src="Picture/assets/assets/cookie.png" alt="Cookie pic" class="cookieImg">
+        <div class="cookieText">
+            <p class = cookie-text>Stop! Cookie time </p>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button class="acceptbtn" onclick="document.querySelector('.popCookie').remove();">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

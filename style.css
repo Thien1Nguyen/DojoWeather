@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+
+/* --------------Helpers-------------- */
+.text1{
+    font-size: 32pt;
+    color: white ;
+}
+.text2{
+    color: white;
+    font-size:24pt;
+}
+.text3{
+    color: black;
+    font-size: 28pt;
+}
+
+.text4{
+    color: black;
+    font-size: 16pt;
+}
+/* <------------image Contol----------------> */
+.weathImg{
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.cookieImg{
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* <!-----------NAV----------> */
+.nav{
+    display: flex;
+    justify-content: center;
+    gap:200px;
+    background-color: rgb(167, 196, 244);
+}
+
+.navLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+}
+.city{
+    cursor: pointer;
+}
+
+/* <!-----------MAIN----------> */
+.main{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+/* <!------TOPBANNER----> */
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid black;
+    margin-bottom: 25px;
+}
+
+.temptConvert{
+    display: flex;
+    align-items: center;
+}
+
+#temptSelect{
+    cursor: pointer;
+    font-size: 16pt;
+    margin-left: 10px;
+}
+
+/* <!------WEATHERDISPLAY-----------> */
+.weathDisplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.day{
+    background-color: rgb(238, 238, 238);
+    padding: 15px;
+    height: 240px;
+    width: 150px;
+}
+
+.dayLogo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20pt;
+    font-weight: bolder;
+}
+
+.weatherText{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14pt;
+
+}
+
+.tempts{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: flex-end;
+    gap:50px;
+    font-size: 16pt;
+    font-weight:800;
+}
+
+.high-text{
+    color: rgb(190, 59, 49);
+}
+
+.low-text{
+    color: rgb(65, 118, 221);
+}
+
+/* <!--------POPUP-----------> */
+.popCookie{
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    height: 100px;
+    background-color: rgb(238, 238, 238) ;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 4px solid black;
+    border-radius: 4px;
+    position: sticky;
+    bottom: 0;
+}
+
+.cookieText{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 410px;
+}
+
+.acceptbtn{
+    background-color: rgb(167, 196, 244);
+    width: 150px;
+    height: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 3px solid black;
+    font-weight: bold;
+    box-shadow: 3px 3px 1px black;
+    cursor: pointer;
+}
+
+.cookie-text{
+    font-size: 16pt;
+    margin-bottom: 5px;
+}
